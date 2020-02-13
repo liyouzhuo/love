@@ -61,7 +61,8 @@
   </head>
 
   <body>
-    <audio src="./music/gai.mp3" id="audio" autoplay="autoplay"></audio>
+
+    <audio src="./music/gai.mp3" controls autoplay="autoplay" id="audio"></audio>
     <div id="text"></div>
 
     <div id="drag-container" style="transform: rotateX(-10deg) rotateY(0deg);">
@@ -151,11 +152,16 @@
       let days = document.getElementById("days");
       days.innerHTML = content;
 
+
+      var myAuto = document.getElementById('audio');
+      myAuto.play();
+      myAuto.focus();
+
       function getDiffDate(targetDate) {
         let date1 = new Date(targetDate);
         let date2 = new Date();
         date1 = new Date(
-          date1.getFullYear(),
+          date1.getFullYear(),/*  */
           date1.getMonth(),
           date1.getDate()
         );
