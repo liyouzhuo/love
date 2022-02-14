@@ -10,7 +10,7 @@
     <style>
       .title {
         position: absolute;
-        bottom: 50px;
+        bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
         animation: blink 1s infinite steps(1);
@@ -62,13 +62,13 @@
 
   <body>
 
-    <audio src="./music/gai.mp3" controls autoplay="autoplay" id="audio"></audio>
+    <audio src="./music/咱们结婚吧.mp3" controls autoplay="autoplay" id="audio"></audio>
     <div id="text"></div>
 
     <div id="drag-container" style="transform: rotateX(-10deg) rotateY(0deg);">
       <div
         id="spin-container"
-        style="width: 120px; height: 170px; animation: 60s linear 0s infinite normal none running spinRevert;"
+        style="margin-top: 250px; margin-left: -200px; width: 120px; height: 170px; animation: 60s linear 0s infinite normal none running spinRevert;"
       >
         <img
           src="./images/image_1.png"
@@ -112,12 +112,12 @@
           style="transform: rotateY(315deg) translateZ(240px); transition: transform 1s ease 0.25s;"
         />
 
-        <p>LOVE Mr.J</p>
+        <p>LOVE Mr.Li</p>
       </div>
       <div id="ground" style="width: 720px; height: 720px;"></div>
     </div>
 
-    <div class="title">2020情人节快乐呀</div>
+    <div class="title">2022情人节快乐呀</div>
     <div id="days"></div>
 
     <div
@@ -131,7 +131,7 @@
         timer = 0;
 
       str =
-        "我的爱只能够<br>让你一个人独自拥有<br>我的灵和魂魄<br>不停守候在你心门口<br>我的伤和眼泪<br>化为乌有为你而流<br>藏在无边无际<br>小小宇宙<br>爱你的我<br>——致lyz";
+        "我的爱只能够<br>让你一个人独自拥有<br>我的灵和魂魄<br>不停守候在你心门口<br>我的伤和眼泪<br>化为乌有为你而流<br>藏在无边无际<br>小小宇宙<br>爱你的我<br>——致李廖";
 
       function typing() {
         if (i <= str.length) {
